@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.svg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Страница авторизации</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo-block"><img class="header-logo__img" src="../img/logoMonolit.png" alt="Логотип в виде буквы м">
+        <div class="header-logo__name"></div>
+      </div>
+      <div class="header__authorization-block">Не авторизован</div>
+    </header>
+    <div class="container"> 
+      <aside> 
+        <div class="nav-panel nav-panel-pale"><img class="nav-panel__img" src="../img/nav-panel-icon/man-pale.svg" alt="Иконка в виде фигуры человека"><img class="nav-panel__img" src="../img/nav-panel-icon/gear-pale.svg" alt="Иконка в виде зубчатого колеса"></div>
+      </aside>
+      <main> 
+        <div class="authorization-page">
+          <form class="authorization-page__form" method="link" action="verification.html">
+            <label class="authorization-page__title" for="login">Авторизация</label>
+            <input class="authorization-page__input" type="text" id="login" placeholder="login" name="login">
+            <input class="authorization-page__input" type="password" id="password" placeholder="password" name="password">
+            <button class="authorization-page__button" type="submit">Войти</button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

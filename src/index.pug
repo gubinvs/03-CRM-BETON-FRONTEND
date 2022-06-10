@@ -1,0 +1,23 @@
+//- Подключил шаблон с разметкой страницы
+extends html/doctypes.pug
+
+//- Изменил название страницы
+block doctype
+    //- Наименование главной страницы
+    - var titleName = 'Страница авторизации';
+
+//- Вставил блок с будующим контентом
+block content
+    header.header
+        include html/header-authorization.pug
+    .container 
+        aside  
+            include html/nav-panel-pale.pug
+        main 
+            .authorization-page
+                include html/authorization-page.pug 
+
+
+            
+
+

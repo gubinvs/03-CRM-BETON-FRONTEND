@@ -1,0 +1,38 @@
+.page
+    .button-section-block
+        h2.page__title  Заказы на согласование:
+        form(method="link", action="orders.html").form-button-action
+            button.button.button-active Оформить заказ
+        .hr
+    .matching-block
+        .filter-period-block 
+            .filter-period-block__name Дата поставки:
+            label(for="").filter-period-block__lable-date от
+            input(type="date").filter-period-block__input-date
+            label(for="").filter-period-block__lable-date  до
+            input(type="date").filter-period-block__input-date 
+            img(src="../img/icon/filter_icon.svg", alt="Облако со стрелками обмена данными")
+        ul.table__list.table__list_verification-page
+            li.table__item
+                .field-th.th__print-icon Print
+                .field-th.th__number № п\п
+                .field-th.th__date Дата поставки
+                .field-th.th__brand Марка бетона
+                .field-th.th__sum Заказано, м<sup>3</sup>
+                .field-th.th__address Адрес доставки
+                .field-th.th__execute-button.th__execute-button_matching Операции
+            li.table__item
+                .field-td.td__print-icon
+                    img(src="../img/icon/printer_icon.svg", alt="Принтер")
+                .field-td.td__number 100
+                .field-td.td__date 25.02.2022 11-00
+                .field-td.td__brand В 7,5 (М100) на щебне (доломитовом)
+                .field-td.td__sum 30
+                .field-td.td__address 
+                    button.button-table Открыть
+                .field-td.td__execute-button.td__execute-button_matching
+                    button.button-table Принять
+                .field-td.td__delete-button 
+                    button.button-table Отклонить 
+                .field-td.td__edit-button 
+                    button.button-table Изменить

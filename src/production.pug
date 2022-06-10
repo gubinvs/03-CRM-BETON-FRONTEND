@@ -1,0 +1,17 @@
+//- Подключил шаблон с разметкой страницы
+extends html/doctypes.pug
+
+//- Изменил название страницы
+block doctype
+    //- Наименование главной страницы
+    - var titleName = 'Производство';
+
+//- Вставил блок с будующим контентом
+block content
+    header.header
+        include html/header.pug
+    .container
+        aside  
+            include html/nav-panel.pug
+        main 
+            include html/production-page.pug
